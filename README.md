@@ -24,6 +24,13 @@ Files provided:
 This assumes you have (or know how to set up) a FuelPHP instance installed
 where the Behat testing can access it (HTTP requests)
 
+To Use
+=============
+- Copy the *FeatureContextRest.php* file somewhere when you can include it in your FeatureContext.php file
+- Make your FeatureContext class extend the new REST context: *class FeatureContext etends FeatureContextRest {*
+- Copy over the model/controller classes to the FuelPHP instance in your *app* folder
+- Update the *behat.yml* file with the *base_url* setting for your test host URL
+
 @author Chris Cornutt <ccornutt@phpdeveloper.org>
 
 @license MIT
